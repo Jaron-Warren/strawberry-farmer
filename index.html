@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="assests/Journal.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Strawberry Farmer</title>
+</head>
+
+<body>
+  <header class="container-fluid">
+    <div class="row bg-primary">
+      <div class="col-12 text-center">
+        <h1>Strawberry Farmer</h1>
+      </div>
+    </div>
+  </header>
+  <main class="container-fluid bg-secondary">
+    <div class="row mt-5">
+      <div class="col-4 text-center">
+        <h4>Upgrades:</h4>
+        <div id=upgrades>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <img src="assests/strawberry.png" width=280px class="fa-spin" onclick="clickit()">
+          </div>
+          <div class="col-12 d-flex justify-content-center pt-5">
+            <p>Strawberries: <span id=clickcounter>0</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 text-center">
+        <h4>Shop:</h4>
+        <div id=shop>
+          <button class="mdi mdi-account-child-circle" onclick=buy_upgrade(farmhand)>Farmhand</button>
+          <button class="mdi mdi-robot" onclick=buy_upgrade(robotfarmer)>Robot farmer</button>
+        </div>
+      </div>
+      <div class="col-12 d-flex p-3 border-top border-bottom border-dark bg-info">
+
+      </div>
+    </div>
+  </main>
+  <footer class="container-fluid">
+    <div class="row bg-primary">
+      <div class="col text-center">
+        <p>Created by: Jaron Warren 2021</p>
+      </div>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+
+</html>
