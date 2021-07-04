@@ -7,3 +7,11 @@ body {
 main {
   flex-grow: 1;
 }
+
+.bg-brown {
+  background-color: rgb(136, 95, 20);
+}
+
+.h-85 {
+  height: 85%!important;
+}

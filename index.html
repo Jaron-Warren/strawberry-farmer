@@ -28,7 +28,12 @@
     <div class="row mt-5">
       <div class="col-4 text-center">
         <h4>Upgrades:</h4>
-        <div id=upgrades>
+        <div class="row bg-light justify-content-evenly h-85 ml-3 mr-3 p-4 rounded" id="upgrades">
+          <div>
+            <h5 class="border-bottom text-center">Pick multiplier: 0
+              <span title="farmers = strawberies per second" class="pl-5">Farmers: 0</span>
+            </h5>
+          </div>
         </div>
       </div>
       <div class="col-4">
@@ -42,13 +47,40 @@
         </div>
       </div>
       <div class="col-4 text-center">
-        <h4>Shop:</h4>
-        <div id=shop>
-          <button class="mdi mdi-account-child-circle" onclick=buy_upgrade(farmhand)>Farmhand</button>
-          <button class="mdi mdi-robot" onclick=buy_upgrade(robotfarmer)>Robot farmer</button>
+        <div class="row">
+          <div class="col-9">
+            <h2 class="border-bottom border-dark">Shop:</h2>
+          </div>
+        </div>
+        <div class="row bg-light rounded ml-1 mr-3 mt-1">
+          <div class="col-9">
+            <h2>Tools:</h2>
+          </div>
+          <div class="col-5"><button class="mdi mdi-pail mt-1 mb-1" onclick="buy_upgrade('clickUpgrades', 'bucket')">
+              &nbsp;&nbsp; Bucket &nbsp;&nbsp;&nbsp;</button></div>
+          <div class="col-5">$<span id=bucketcost>00</span></div>
+          <div class="col-5"><button class="mdi mdi-wheel-barrow mt-1 mb-1"
+              onclick="buy_upgrade('clickUpgrades', 'cart')">
+              &nbsp;&nbsp;&nbsp;&nbsp; Cart &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button></div>
+          <div class="col-5">$<span id=cartcost>00</span></div>
+        </div>
+        <div class="row bg-light rounded ml-1 mr-3 mt-2">
+          <div class="col-9">
+            <h2>Auto farmers:</h2>
+          </div>
+          <div class="col-5"><button class="mdi mdi-account-child-circle mt-1 mb-1"
+              onclick="buy_upgrade('automaticUpgrades', 'farmhand' )">
+              &nbsp; Farmhand &nbsp;&nbsp;</button></div>
+          <div class="col-5">$<span id=farmhandcost>00</span></div>
+          <div class="col-5"><button class="mdi mdi-robot mt-1 mb-1"
+              onclick="buy_upgrade('automaticUpgrades', 'robotfarmer' )"> Robot
+              farmer</button></div>
+          <div class="col-5">$<span id=robotfarmercost>00</span></div>
         </div>
       </div>
       <div class="col-12 d-flex p-3 border-top border-bottom border-dark bg-info">
+      </div>
+      <div class="row bg-brown h-100">
 
       </div>
     </div>
