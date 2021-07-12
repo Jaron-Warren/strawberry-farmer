@@ -79,7 +79,13 @@ function buy_upgrade(upgradetype, upgradename) {
     drawUpgrades()
   } else {
     console.log('we require more strawberries!')
+    document.getElementById("status_message").innerText = "We require more strawberries!"
+    setTimeout(clear_strawberry_message, 1000);
   }
+}
+
+function clear_strawberry_message() {
+  document.getElementById("status_message").innerText = ""
 }
 
 function clickUpgrader() {
